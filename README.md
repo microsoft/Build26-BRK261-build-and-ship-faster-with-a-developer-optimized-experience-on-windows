@@ -1,36 +1,3 @@
-# 🚀 Get Started
-
-**This repo is where attendees go to continue their learning after your session — and your Copilot agent will help you set it up.**
-
-### Step 1: Open your repo
-
-Open this repo in a **Codespace** (click the green **Code** button → **Create a Codespace**) — or clone it locally. Then open **GitHub Copilot Chat**.
-
-### Step 2: Add your content
-
-Give the agent something to work with. Drag files into the Explorer panel — session abstracts, outlines, screenshots, notes — and drop them in one of two places:
-
-| Where to put it | What goes there | Who sees it |
-|---|---|---|
-| **`_remove-before-publish/`** | Internal reference materials (abstracts, outlines, screenshots, planning docs) | **Copilot only** — never published |
-| **`/docs/`, `/src/`, or repo root** | Lab instructions, demo code, sample data, getting-started guides | **Attendees** — published with the repo |
-
-> 💡 Not sure? Start by dropping your session abstract or outline into `_remove-before-publish/`. The agent will figure out what to do with it.
-
-### Step 3: Ask the Agent
-
-Once your content is in the repo, use these three phrases with Copilot to build out your session repo:
-
-| Phrase to use with Copilot | What it does | When to run it |
-|---|---|---|
-| **"Help me get started"** | Sets up session title, description, outcomes, and owners | After you've added your session abstract or outline to the repo |
-| **"Help me refine content"** | Organizes your session content into the repo | Each time you add or update content |
-| **"Help me finalize"** | Final review, cleanup, and publication prep | When you're ready to publish |
-
-> 💡 **These three phrases are just the starting point.** Copilot can do much more — try asking it to brainstorm next steps for attendees, generate code samples, or build out your repo structure. Don't be afraid to put it in plan mode and ask for what you need.
-
----
-
 <a name="start-building"></a>
 <br>
 <p align="center">
@@ -39,62 +6,82 @@ Once your content is in the repo, use these three phrases with Copilot to build 
 
 # [Microsoft Build 2026](https://build.microsoft.com)
 
-## 🔥 BRKXXX: SESSION TITLE
+## 🔥 BRK261: Build and Ship Faster with a Developer-Optimized Experience on Windows
 
 ### Session Description
 
-*Add Session Description*
+This presentation covers two main areas: developing on Windows, and developing for Windows. Learn about all the latest tools and methods you can use to build great software while using Windows, as well as the newest improvements for building powerful and exciting Windows applications.
 
-### 🏫 Getting started in a guided session
+### 🚀 Getting started
 
-To get started in a guided lab session:
-- <!-- step 1 -->
-- <!-- step 2 -->
-- <!-- step 3 -->
+Want to explore the topics from this presentation on your own?
 
-### 🏠 Getting started in your own environment
-
-If you're following these steps at your own pace:
-- Clone this repository
-- Set up your development environment
-- <!-- step 3 -->
+- Check out the [resources below](#-resources-and-next-steps) for links to documentation and tools covered in the presentation
+- Install [Windows Terminal](https://aka.ms/terminal) for a modern terminal experience
+- Try [WinGet](https://learn.microsoft.com/windows/package-manager/) to quickly set up your development environment
+- Install [Windows Subsystem for Linux](https://learn.microsoft.com/windows/wsl/install) to run Linux tools alongside Windows
+- Explore [WinUI 3](https://learn.microsoft.com/windows/apps/winui/winui3/) to start building modern Windows applications
 
 ### 🧠 Learning Outcomes
 
-By the end of this session, you will be able to:
+By the end of this presentation, you will be able to:
 
-- <!-- outcome 1 -->
-- <!-- outcome 2 -->
-- <!-- outcome 3 -->
+- Discover the latest developer tools and workflows for building software on Windows, including improvements to the terminal, package management, and developer environment setup
+- Explore new capabilities for building Windows applications, including modern UI frameworks and platform features that make Windows apps more powerful
+- Understand how Windows is evolving to provide a more productive and streamlined developer experience across both "developing on" and "developing for" Windows scenarios
 
 ### 💬 Keep Learning with Copilot
 
-Try these prompts with GitHub Copilot to explore the topics from this session. Open Copilot Chat in VS Code (`Ctrl+Alt+I` on Windows/Linux, `Cmd+Shift+I` on Mac), paste a prompt, and see what you learn. Try connecting the [Microsoft Learn MCP Server](#-microsoft-learn-mcp-server) for the latest official documentation.
+Try these prompts with GitHub Copilot to explore the topics from this presentation. Open Copilot Chat in Visual Studio Code (`Ctrl+Alt+I` on Windows/Linux, `Cmd+Shift+I` on Mac), paste a prompt, and see what you learn. Try connecting the [Microsoft Learn MCP Server](#-microsoft-learn-mcp-server) for the latest official documentation.
 
 Use these as a starting point — or write your own!
 
-<!-- Prompts will be tailored to this session's content during repo setup. -->
+1. Explore the developer tools ecosystem:
 
-> *Prompts coming soon — check back after the session content is finalized.*
+```
+Using the Microsoft Learn MCP Server, give me an overview of the Windows developer tools ecosystem — what are Windows Terminal, WinGet, and Dev Home, and how do they work together to streamline setting up a development environment?
+```
+
+2. Dive into building Windows apps:
+
+```
+Explain the differences between WinUI 3, WPF, and WinForms for building modern Windows desktop applications. When should I choose each one?
+```
+
+3. Get hands-on with WSL Containers:
+
+```
+Using the Microsoft Learn MCP Server, find the latest documentation on WSL Containers (wslc) and walk me through how to build and run a containerized Linux app on Windows
+```
 
 ### 💻 Technologies Used
 
-1. <!-- technology 1 -->
-1. <!-- technology 2 -->
-1. <!-- technology 3 -->
+1. [Windows](https://learn.microsoft.com/windows/) — The platform for developers, covering tools and app development
+1. [Windows Terminal](https://learn.microsoft.com/windows/terminal/) — A modern, feature-rich terminal application for command-line users
+1. [WinGet (Windows Package Manager)](https://learn.microsoft.com/windows/package-manager/) — Command-line tool for discovering, installing, and managing applications
+1. [WinUI 3](https://learn.microsoft.com/windows/apps/winui/winui3/) — The modern native UI framework for building Windows desktop applications
+1. [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/windows/wsl/) — Run Linux distributions natively on Windows
+1. [WSL Containers (wslc)](https://aka.ms/wslc) — Build and run OCI container images directly on Windows via WSL
 
 ### 📚 Resources and Next Steps
 
 | Resource | Description |
 |:---------|:------------|
-| [https://aka.ms/build26-next-steps](https://aka.ms/build26-next-steps) | Explore lab and session repos to further your learning from Microsoft Build |
+| [Windows Developer Documentation](https://learn.microsoft.com/windows/apps/) | Get started building Windows applications |
+| [Windows Terminal Documentation](https://learn.microsoft.com/windows/terminal/) | Learn about Windows Terminal features and customization |
+| [Windows Package Manager (WinGet)](https://learn.microsoft.com/windows/package-manager/) | Install and manage developer tools with WinGet |
+| [WinUI 3 Documentation](https://learn.microsoft.com/windows/apps/winui/winui3/) | Build modern Windows desktop apps with WinUI |
+| [Windows Subsystem for Linux Documentation](https://learn.microsoft.com/windows/wsl/) | Official WSL documentation on Microsoft Learn |
+| [WSL Containers](https://aka.ms/wslc) | Learn about WSL Containers and the WSL Container SDK |
+| [Set Up a Development Environment on Windows](https://learn.microsoft.com/windows/dev-environment/) | Guide to configuring Windows for development |
+| [Explore Microsoft Build 2026 Labs and Sessions](https://aka.ms/build26-next-steps) | Explore lab and session repos to further your learning from Microsoft Build |
 
 
 ### 🌟 Microsoft Learn MCP Server
 
-The Microsoft Learn MCP Server gives your AI agent direct access to Microsoft's official documentation — grounded, up-to-date answers about the products and services covered in this session.
+The Microsoft Learn MCP Server gives your AI agent direct access to Microsoft's official documentation — grounded, up-to-date answers about the products and services covered in this presentation.
 
-**VS Code** — One click installation: 
+**Visual Studio Code** — One click installation: 
 
 [![Install in VS Code](https://img.shields.io/badge/VS_Code-Install_Microsoft_Learn_MCP-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect/mcp/install?name=microsoft-learn&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Flearn.microsoft.com%2Fapi%2Fmcp%22%7D)
 
@@ -108,17 +95,17 @@ For more info, other clients, and to post questions, visit the [Learn MCP Server
 
 ## Content Owners
 
-<!-- TODO: Add yourself as a content owner
-1. Change the src in the image tag to {your github url}.png
-2. Change INSERT NAME HERE to your name
-3. Change the github url in the final href to your url. -->
-
 <table>
 <tr>
-    <td align="center"><a href="http://github.com/yourGitHubHandle">
-        <img src="https://github.com/yourGitHubHandle.png" width="100px;" alt="INSERT NAME HERE"/><br />
-        <sub><b>INSERT NAME HERE</b></sub></a><br />
-            <a href="https://github.com/yourGitHubHandle" title="talk">📢</a>
+    <td align="center"><a href="https://github.com/craigloewen-msft">
+        <img src="https://github.com/craigloewen-msft.png" width="100px;" alt="Craig Loewen"/><br />
+        <sub><b>Craig Loewen</b></sub></a><br />
+            <a href="https://github.com/craigloewen-msft" title="talk">📢</a>
+    </td>
+    <td align="center"><a href="https://github.com/cinnamon-msft">
+        <img src="https://github.com/cinnamon-msft.png" width="100px;" alt="Kayla Cinnamon"/><br />
+        <sub><b>Kayla Cinnamon</b></sub></a><br />
+            <a href="https://github.com/cinnamon-msft" title="talk">📢</a>
     </td>
 </tr></table>
 
