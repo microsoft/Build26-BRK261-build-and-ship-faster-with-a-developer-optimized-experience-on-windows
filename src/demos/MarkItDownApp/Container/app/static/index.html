@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MarkItDown — drag, drop, done</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/marked@14/marked.min.js" defer></script>
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>MarkItDown</h1>
+    <div class="actions">
+      <input type="file" id="file-input" hidden />
+      <button id="pick-btn">Choose file…</button>
+      <button id="copy-btn" disabled>Copy Markdown</button>
+      <button id="download-btn" disabled>Download .md</button>
+      <a href="/docs" target="_blank" rel="noopener">API docs ↗</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="pane" id="md-pane">
+      <header class="pane-header">Markdown</header>
+      <textarea id="md-out" readonly spellcheck="false" placeholder="Drop a file anywhere on the page…"></textarea>
+    </section>
+    <section class="pane" id="render-pane">
+      <header class="pane-header">Rendered</header>
+      <article id="rendered"><p class="placeholder">Rendered output appears here.</p></article>
+    </section>
+  </main>
+
+  <div id="drop-overlay" hidden>
+    <div class="overlay-inner">Drop the file to convert</div>
+  </div>
+
+  <div id="status-bar" role="status" aria-live="polite"></div>
+
+  <div id="error-banner" hidden role="alert"></div>
+</body>
+</html>

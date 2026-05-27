@@ -1,0 +1,23 @@
+# Force binary handling for sample fixtures so git never normalises line endings.
+DemoContainer/tests/samples/** binary
+
+# Same for the small fixtures.
+DemoContainer/tests/fixtures/*.docx binary
+DemoContainer/tests/fixtures/*.xlsx binary
+DemoContainer/tests/fixtures/*.pdf binary
+DemoContainer/tests/fixtures/*.jpg binary
+DemoContainer/tests/fixtures/*.png binary
+DemoContainer/tests/fixtures/*.zip binary
+
+# Text files: enforce LF in the repo regardless of host OS.
+*.py text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.toml text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+*.sh text eol=lf
+Dockerfile text eol=lf

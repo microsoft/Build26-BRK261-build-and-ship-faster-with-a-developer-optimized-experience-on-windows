@@ -1,0 +1,3 @@
+Hello, MarkItDown!
+
+This is a plaintext fixture used to verify the /api/v1/convert endpoint.

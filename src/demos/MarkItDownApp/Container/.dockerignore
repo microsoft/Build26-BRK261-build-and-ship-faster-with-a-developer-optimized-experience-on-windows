@@ -1,0 +1,17 @@
+.git
+.gitignore
+.github
+.venv
+venv
+__pycache__
+*.pyc
+.pytest_cache
+.ruff_cache
+.coverage
+htmlcov
+tests/__pycache__
+README.md
+LICENSE
+docker-compose.yml
+.dockerignore
+Dockerfile
