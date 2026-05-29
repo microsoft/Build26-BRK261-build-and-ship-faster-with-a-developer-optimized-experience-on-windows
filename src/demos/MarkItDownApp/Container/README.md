@@ -1,6 +1,6 @@
 # build2026Demo — MarkItDown Service
 
-A single Docker container that ships two things on top of
+A single WSL container that ships two things on top of
 [microsoft/markitdown](https://github.com/microsoft/markitdown):
 
 1. **A drag‑and‑drop web UI** at `/` — drop a file, see the Markdown on the left and a rendered
@@ -19,19 +19,19 @@ kiota, OpenAPI Generator, …) in one command.
 ## Quick start
 
 ```bash
-docker compose up --build
+wslc compose up --build
 ```
 
 Then open <http://localhost:8000> for the UI, or <http://localhost:8000/docs> for the API docs.
 
-Or with plain Docker:
+Or with plain wslc:
 
 ```bash
-docker build -t markitdown-service .
-docker run --rm -p 8000:8000 markitdown-service
+wslc build -t markitdown-service .
+wslc run --rm -p 8000:8000 markitdown-service
 ```
 
-### Local dev (no Docker)
+### Local dev (no container)
 
 ```bash
 python -m venv .venv
@@ -142,7 +142,7 @@ more. Hit `/api/v1/formats` for the runtime list, or see the upstream
 
 This image deliberately ships **without** LLM features (no OpenAI key, no `markitdown-ocr`, no
 Azure Document Intelligence) to keep the image small and zero‑config. Add them later by extending
-the Dockerfile.
+the Containerfile.
 
 ---
 
@@ -165,7 +165,7 @@ reverse proxy that handles authn/authz (Caddy, nginx, Cloudflare, an APIM, …).
 
 ```
 build2026Demo/
-├── Dockerfile               # multi-stage build
+├── Containerfile            # multi-stage build
 ├── docker-compose.yml
 ├── pyproject.toml
 ├── app/
@@ -175,7 +175,7 @@ build2026Demo/
 │   └── static/              # index.html + app.js + styles.css (drag-drop UI)
 ├── tests/                   # pytest + FastAPI TestClient
 │   └── fixtures/            # tiny .txt / .html / .csv samples
-└── .github/workflows/ci.yml # ruff + pytest + docker build smoke
+└── .github/workflows/ci.yml # ruff + pytest + wslc build smoke
 ```
 
 ## License
