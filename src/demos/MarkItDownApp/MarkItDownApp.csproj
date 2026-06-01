@@ -20,7 +20,7 @@
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.8.250907003" />
     <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.26100.4654" />
     <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.3179.45" />
-    <PackageReference Include="Microsoft.WSL.Containers" Version="2.8.7-build4" />
+    <PackageReference Include="Microsoft.WSL.Containers" Version="2.8.10" />
   </ItemGroup>
 
   <ItemGroup Condition="Exists('Container\markitdown.tar')">

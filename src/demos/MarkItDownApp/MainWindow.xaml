@@ -112,7 +112,8 @@
                     <Grid Grid.Row="1">
                         <!-- Drop Zone (empty state) -->
                         <Grid x:Name="DropZonePanel"
-                              AllowDrop="True" DragOver="OnDragOver" Drop="OnDrop">
+                              AllowDrop="True" DragOver="OnDragOver" Drop="OnDrop"
+                              Background="Transparent">
                             <Border Margin="40" Padding="40" CornerRadius="12"
                                     Background="{ThemeResource CardBackgroundFillColorSecondaryBrush}"
                                     BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
@@ -147,7 +148,8 @@
 
                         <!-- Result (output state) -->
                         <Grid x:Name="ResultPanel" Visibility="Collapsed"
-                              AllowDrop="True" DragOver="OnDragOver" Drop="OnDrop">
+                              AllowDrop="True" DragOver="OnDragOver" Drop="OnDrop"
+                              Background="Transparent">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto" />
                                 <RowDefinition Height="*" />

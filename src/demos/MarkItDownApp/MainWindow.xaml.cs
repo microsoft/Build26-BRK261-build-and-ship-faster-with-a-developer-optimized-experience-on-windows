@@ -109,6 +109,7 @@ public sealed partial class MainWindow : Window
     {
         if (_closed) return;
 
+        var deferral = e.GetDeferral();
         try
         {
             if (!e.DataView.Contains(StandardDataFormats.StorageItems)) return;
@@ -125,6 +126,10 @@ public sealed partial class MainWindow : Window
         {
             Debug.WriteLine($"[MainWindow] OnDrop exception: {ex.Message}");
             ShowError($"Failed to process dropped file: {ex.Message}");
+        }
+        finally
+        {
+            deferral.Complete();
         }
     }
 
@@ -307,7 +312,7 @@ public sealed partial class MainWindow : Window
                     font-family: 'Segoe UI', system-ui, sans-serif;
                     font-size: 14px;
                     line-height: 1.6;
-                    color: #000;
+                    color: #fff;
                     background: transparent;
                     padding: 16px;
                     margin: 0;
