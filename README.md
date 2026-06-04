@@ -75,6 +75,7 @@ Using the Microsoft Learn MCP Server, find the latest documentation on WSL Conta
 | [WSL Containers](https://aka.ms/wslc) | Learn about WSL Containers and the WSL Container SDK |
 | [Set Up a Development Environment on Windows](https://learn.microsoft.com/windows/dev-environment/) | Guide to configuring Windows for development |
 | [Explore Microsoft Build 2026 Labs and Sessions](https://aka.ms/build26-next-steps) | Explore lab and session repos to further your learning from Microsoft Build |
+| [Watch the session recording](https://aka.ms/build26/BRK261/youtube) | Watch the recorded Microsoft Build session. |
 
 
 ### 🌟 Microsoft Learn MCP Server
